@@ -1,0 +1,16 @@
+#imagen a usar
+FROM python:3.10
+
+#correr el index que yo quiero y no por defecto
+WORKDIR /servidor1
+COPY servidor1.py .
+
+#INSTALAR 
+RUN pip install flask
+
+#ejecutar la aplicacion
+CMD ["python", "servidor1.py"]
+
+
+#puerto de contenedor
+EXPOSE 5000
