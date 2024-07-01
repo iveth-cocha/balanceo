@@ -1,5 +1,5 @@
 #imagen a usar
-FROM python:3.10
+FROM python:latest
 
 #correr el index que yo quiero y no por defecto
 WORKDIR /servidor1
@@ -12,5 +12,5 @@ RUN pip install flask
 CMD ["python", "servidor1.py"]
 
 
-#puerto de contenedor
+#puerto de contenedor PARA TODOS LOS SERVIDORES
 EXPOSE 5000
